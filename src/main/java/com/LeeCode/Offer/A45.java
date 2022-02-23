@@ -1,15 +1,17 @@
 package com.LeeCode.Offer;
 
+import java.util.Arrays;
+
 public class A45 {
     public String minNumber(int[] nums) {
-        return null;
+        String[] strs = new String[nums.length];
+        for(int i = 0; i < nums.length; i++)
+            strs[i] = String.valueOf(nums[i]);
+        Arrays.sort(strs, (x, y) -> (x + y).compareTo(y + x));
+        StringBuilder res = new StringBuilder();
+        for(String s : strs)
+            res.append(s);
+        return res.toString();
     }
-    private boolean compareTo(int a, int b){
-        String sa = a+b+"";
-        String sb = b+a+"";
-        if(Integer.parseInt(sa)>=Integer.parseInt(sb)){
-            return true;
-        }
-        else return false;
-    }
+
 }
