@@ -1,7 +1,5 @@
 package com.LeeCode.Medium;
 
-import com.sun.corba.se.impl.oa.poa.POAPolicyMediatorImpl_NR_UDS;
-
 public class Medium31 {
     public static void main(String[] args) {
         int[] nums=new int[]{2,5,4,3,1};
