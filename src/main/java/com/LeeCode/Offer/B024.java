@@ -3,14 +3,13 @@ package com.LeeCode.Offer;
 public class B024 {
     public ListNode reverseList(ListNode head) {
         if(head==null) return null;
-        ListNode pre = new ListNode(-1);
+        ListNode pre = null;
         ListNode now = head;
 
-        while(now.next!=null){
+        while(now!=null){
             ListNode temp = now.next;
-            now.next=null;
-            pre.next = now;
-            pre = pre.next;
+            now.next=pre;
+            pre= now;
             now=temp;
         }
 
