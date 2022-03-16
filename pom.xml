@@ -14,6 +14,16 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.anaptecs.jeaf.owalibs</groupId>
+            <artifactId>org.apache.log4j</artifactId>
+            <version>4.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.12</version>
+        </dependency>
     </dependencies>
 
     <properties>
